@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:onClick="splashScreenClick"
+    >
+    <LinearLayout 
+         android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" 
+	    	android:orientation="vertical"
+	    	android:layout_centerInParent="true"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" 
+	    	android:orientation="horizontal"
+            >
+            <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="60dip"
+		    	android:text="N"
+		    	android:textColor="@color/DarkRed"
+		    	/>
+		    <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="45dip"
+		    	android:text="e"
+		    	android:textColor="@color/DarkRed"
+		    	/>
+		    		    		    <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="90dip"
+		    	android:text="\\"
+		    	android:textColor="@color/Gray"
+		    	/>
+		    		    <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="90dip"
+		    	android:text="/"
+		    	android:textColor="@color/DarkRed"
+		    	/>
+		    		    		    <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="45dip"
+		    	android:text="e"
+		    	android:textColor="@color/Gray"
+		    	/>
+		    		    		    <TextView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content" 
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="60dip"
+		    	android:text="X"
+		    	android:textColor="@color/Gray"
+		    	/>
+	    </LinearLayout>
+	    <TextView
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" 
+	    	android:gravity="center"
+	    	android:layout_gravity="center"
+	    	android:textSize="12dip"
+	    	android:visibility="invisible"
+	    	android:id="@+id/touchScreenSplashScreenText"
+	    	android:text="[Touch The Screen To Begin]"
+	    	android:textColor="@color/DarkGray"
+	    	
+	    	/>
+	    </LinearLayout>	
+	    <TextView 
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center"
+			android:layout_alignParentBottom="true"
+	        android:id="@+id/splashVersionAppNumber"
+	        android:layout_marginBottom="15dip"
+	        android:text=""
+	        android:textColor="@color/DarkGray"
+	        />
+
+
+</RelativeLayout>
+
+
+<!-- 
+android:background="@drawable/splash1"
+ -->

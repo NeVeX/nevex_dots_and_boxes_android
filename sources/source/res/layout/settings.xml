@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="70dip"
+	    android:layout_marginBottom="20dip"
+	    android:gravity="center_horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:textSize="@dimen/menuHeaderTextSize"
+	    android:text="Settings" />
+
+    <CheckBox 
+    	android:id="@+id/checkBoxAnimate"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:layout_gravity="center"
+    	android:textSize="@dimen/textSize"
+    	android:text="Animation"
+    	android:onClick="animateCheckboxClicked"
+        />
+     <CheckBox 
+    	android:id="@+id/checkBoxSeizureMode"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:layout_gravity="center"
+    	android:textSize="@dimen/textSize"
+    	android:text="Seizure Mode"
+    	android:onClick="seizureModeCheckboxClicked"
+        />
+      <CheckBox 
+    	android:id="@+id/checkBoxDebugMode"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:layout_gravity="center"
+    	android:textSize="@dimen/textSize"
+    	android:text="Debug Mode"
+    	android:onClick="debugModeCheckboxClicked"
+        />
+      
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_gravity="center"
+	    android:orientation="horizontal" >
+	    	<TextView 
+	    	  	android:id="@+id/aiEngineMinimumDelayText"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginRight="7dip"
+	    		android:textSize="@dimen/textSize"
+	    		android:text="Minimum A.I. Delay [ms]"
+	    	/>
+	       <TextView
+		    	android:id="@+id/aiEngineMinimumDelay"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:layout_gravity="center"
+		    	android:textSize="@dimen/textSize"	
+	    	/> 
+	    	<Button
+	    	    android:id="@+id/aiMinimumDelayNegativeButton"
+	    	    android:background="@drawable/negative_button_bg"
+	    		android:layout_width="28dip"
+	    		android:layout_height="28dip"
+	    		android:layout_marginLeft="10dip"
+	    		android:layout_marginRight="10dip"
+	    		android:onClick="negativeMinimumAiDelayButtonClick"
+	    	    />
+	    	<Button
+	    	    android:id="@+id/aiMinimumDelayPositiveButton"
+	    	    android:background="@drawable/positive_button_bg"
+	    		android:layout_width="28dip"
+	    		android:layout_height="28dip"
+	    		android:onClick="positiveMinimumAiDelayButtonClick"
+	    	    />
+	       <!--  
+	       <EditText
+	    	android:id="@+id/aiEngineMinimumDelay"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:focusableInTouchMode="true"
+	    	android:gravity="center"
+	    	android:layout_gravity="center"
+	    	android:textSize="@dimen/textSize"	
+	    	> 
+	    	-->
+	    		<!--   <requestFocus /> -->
+	    	<!--  </EditText>
+	    	-->
+	    	
+       </LinearLayout>
+      
+      <!--  
+      <TextView 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="right"
+            android:id="@+id/settingsScreenVersionAppNumber"
+            android:textColor="@color/DarkGray"
+            />
+    	-->
+    
+</LinearLayout>

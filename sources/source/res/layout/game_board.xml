@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	 
+	        <com.mark.ui.MyGameView
+	            android:id="@+id/DrawLevelID"
+	            android:layout_alignParentTop="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	        />
+            
+            
+            <RelativeLayout 
+			        android:id="@+id/GameBoardBottomRibbon"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:background="@android:color/black"
+			         >
+
+			        
+				    <RelativeLayout
+					     android:id="@+id/RelativeLayoutZoomButtons"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal"
+				        android:layout_alignParentLeft="true"
+				        >
+					        <LinearLayout 
+					            android:id="@+id/LinearButtonsLayoutZoomButtons"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:orientation="horizontal"
+						        android:layout_alignParentLeft="true"
+					            >
+			  		       
+					            
+					            <Button 
+					            android:text="  +  " 
+					            android:textStyle="bold"
+					            android:textSize="@dimen/textSize"
+					            android:layout_marginRight="1dip"
+					            android:id="@+id/ZoomPositiveButton"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:onClick="ZoomPositiveClick"
+					            />
+			  		        <Button 
+					            android:text="  -  " 
+					            android:textSize="@dimen/textSize"
+					            android:textStyle="bold"
+					            android:id="@+id/ZoomNegativeButton"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:onClick="ZoomNegativeClick"
+					            />
+			  		        <!-- 
+			  		   		 <Button 
+					            android:layout_marginRight="1dip"
+					            android:id="@+id/ZoomPositiveButton"
+					            android:background="@drawable/positive_button_bg"
+					            android:layout_width="35dip"
+					            android:layout_height="match_parent"
+					            android:onClick="ZoomPositiveClick"
+					            />
+			  		        <Button 
+					            android:id="@+id/ZoomNegativeButton"
+					            android:background="@drawable/negative_button_bg"
+					            android:layout_width="35dip"
+					            android:layout_height="match_parent"
+					            android:onClick="ZoomNegativeClick"
+					            />
+			  		        -->
+			  		        
+			  		        </LinearLayout>
+		  		        </RelativeLayout>
+	
+	  		        <RelativeLayout
+					     android:id="@+id/RelativeLayoutOtherButtonsLayout"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal">
+					        <LinearLayout 
+					            android:id="@+id/LinearButtonsLayoutOtherButtons"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:orientation="horizontal"
+						        android:layout_alignParentRight="true"
+					            >
+			  		        <!-- 
+					  		        <Button 
+							            android:text="Animate" 
+							            android:id="@+id/AnimateButton"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							           
+							            android:onClick="AnimateBoardClicked"
+							            />
+					  		        <Button 
+							            android:text="Seizure!" 
+							            android:id="@+id/SeizureButton"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:onClick="SeizureModeClicked"
+							            />
+						        -->
+					  		        <Button 
+							            android:text="Undo" 
+							            android:id="@+id/UndoButton"
+           					          	android:textStyle="bold"
+					            		android:textSize="@dimen/textSize"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:onClick="UndoButtonClicked"
+							            />
+			  		        </LinearLayout>
+  		        </RelativeLayout>
+  		        
+			</RelativeLayout>	
+</RelativeLayout>
+
